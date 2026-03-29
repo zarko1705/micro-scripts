@@ -7,8 +7,8 @@ LIMIT="${2:-10}"
 
 
 if [[ ! -d "$TARGET" ]]; then
-    echo "Error, '$TARGET' is not a directory." >&2
-    exit1
+    echo "Error, '$TARGET' is not a directories." >&2
+    exit 1
 fi
 
 echo "Top $LIMIT largest directory in: $TARGET"
